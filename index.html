@@ -1,0 +1,58 @@
+<html>
+    <head>
+            <title>Filter Web App Project</title>
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+              <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+          
+              <link rel="stylesheet" type="text/css" href="style.css">
+          
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+            <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    </head>
+    <body>
+        <!--CSS Code for background color--> 
+        <style>
+        body
+        {
+            background-color: cadetblue;
+        }
+        #heading
+        {
+            color: white;
+            font-size: 50px;
+        }
+        #takeSnapshot
+        {
+            font-size: 21px;
+            margin-right: 50px;
+            margin-bottom: 100px;
+        }
+        #canvas
+        {
+            margin-bottom: 400px;
+            margin-left: 50px;
+            margin-right: 50px;
+            animation-name: example;
+            animation-iteration-count: infinite;
+            animation-duration: 4s;
+            text-align: center;
+            margin-top: 25px;
+        }
+        </style>
+        <!--Heading Code-->
+        <center>
+            <h1 class="btn btn-danger" id="heading"> Filter Web App</h1>
+        <br> <br>
+        <!-- Button Code-->
+        <button class="btn btn-success" onclick="takeSnapshot()" id="takeSnapshot"> Take Snapshot </button>
+
+        <!-- Canvas -->
+        <div>
+            <canvas id="canvas" width="400" height="400" style="border:5px solid #000000;"></canvas>
+        </div>
+        <script src="main.js"></script>
+    </center>
+    </body>
+</html>
